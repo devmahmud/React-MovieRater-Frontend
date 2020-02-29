@@ -27,7 +27,7 @@ function App(props) {
     fetch(`${process.env.REACT_APP_API_URL}/api/movies/`, {
       method: "GET",
       headers: {
-        Authorization: "token ec74d5fd29c4d4b5c48e2c65ca22df33fea90fd1"
+        Authorization: `token ${token}`
       }
     })
       .then(resp => resp.json())
